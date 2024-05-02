@@ -4,7 +4,7 @@ Original build and documentation: https://www.lookmumnocomputer.com/big-button
 
 More info will be added with the files.
 
-**Disclaimer**
+**Disclaimer:**
 
 This project does not work by replacing arduino with pico from the original schmatics. New project files including PCB & stripboard layouts will be uploaded
 Readme file will also be updated soon.
