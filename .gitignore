@@ -1,2 +1,6 @@
 # Global .gitignore
 .DS_Store
+Hardware/Rev-0.1/.DS_Store
+Hardware/Rev-0.1/PCB/.DS_Store
+Hardware/.DS_Store
+.DS_Store

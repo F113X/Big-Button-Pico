@@ -18,7 +18,7 @@ out5 = Pin(5, Pin.OUT)
 #inputs
 dlt = Pin(6, Pin.IN) #delete
 rst = Pin(7, Pin.IN) #reset
-fill = Pin(8, Pin.IN) #fill
+fll = Pin(8, Pin.IN) #fill
 clr = Pin(9, Pin.IN) #clear
 clk = Pin(10, Pin.IN) #clock
 
@@ -52,10 +52,10 @@ def trigger(track, step):
 
 #fill (second sequence)
 def fill():
-    if fill.value == 0:
+    if fll.value() == 0:
         currentSeq = seq
 
-    elif fill.value == 1:
+    elif fll.value() == 1:
         currentSeq = fill
 
 #delete step
@@ -78,7 +78,7 @@ def reset():
                 
 #track select
 def trackSelect():
-    value = trackSel.read_u16() / 65536
+    value = trk.read_u16() / 65536
     
     if value < 1/6:
         return 0
@@ -90,7 +90,7 @@ def trackSelect():
         return 3
     if value >= 4/6 and value < 5/6:
         return 4
-    if value >= 5/6
+    if value >= 5/6:
         return 5
 
 #output thing
