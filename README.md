@@ -10,6 +10,6 @@ This project does not work by replacing arduino with pico from the original schm
 Readme file will also be updated soon.
 
 This is an ongoing project. Current progress does not allow fully making the project, however you could analyze the code and make the project based on that.
-# Please point out problems in the code as it has not been tested yet.
+### Please point out problems in the code as it has not been tested yet.
 
 
