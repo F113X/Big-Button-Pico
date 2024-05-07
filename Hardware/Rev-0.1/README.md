@@ -4,4 +4,4 @@
 
 As I use EasyEDA for PCB Design, I do not have official project files for other EDA softwares.
 
-EasyEDA does allow export in the Altium format as an experimental feature, so I've included that as well, but I've been informed that you should check the design files thoroughly before using it. **Use at your own risk.**
+EasyEDA does allow export in the Altium format as an experimental feature, so I've included that as well, but I've been informed that you should check the design files thoroughly before using it. **Use at your own risk.** (Temporarily deleted for further changes)
