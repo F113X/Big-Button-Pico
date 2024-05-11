@@ -1,5 +1,6 @@
 # Big-Button-Pico
-LMNC Big Button remade with the Raspberry Pi Pico, with changes in code and functionality, and reprogrammed with micropython
+LMNC Big Button remade with the Raspberry Pi Pico for Eurorack, with changes in code and functionality, and reprogrammed with micropython
+
 Original build and documentation: https://www.lookmumnocomputer.com/big-button
 
 ![Big-Button-Pico](Images/big-button_orig_ref.jpeg)
@@ -9,10 +10,41 @@ Original build and documentation: https://www.lookmumnocomputer.com/big-button
 This project will not work by replacing arduino with pico from the original schmatics as new code is written and functionality has changed.  New project files including PCB & stripboard layouts will be uploaded.
 
 BOM has been uploaded, but the project is not tested yet so only use as reference
-
-This is an ongoing project. Current progress does not allow fully making the project, however you could analyze the code and make the project based on that.
 **Please point out problems in the code as it has not been tested yet.**
 
+## Ver 0.1 - Initial Commit
+**Note: this version is largely defected due to issues in code and hardware. Use as reference only.**
+
+Issues:
+- Hole for buttons are not big enough
+- Labels for knobs are too small
+- Track switch component is incorrect
+- Step length works strangely
+- Code issues have been fixed already.
+- Power does not power on Pico
+
+## Ver 0.2 - Under Development
+
+New Features:
+- Added title of modules\
+- Placed mounting holes a bit closer together
+
+
+
+New Issues:
+
+## Programming Instructions:
+
+### Flash latest micropython firmware into Raspberry Pi Pico
+1. Hold BootSel button while plugging in the Raspberry Pi Pico
+2. Upload flash_nuke.uf2 to remove any previous files in the controller if needed
+3. The controller will automatically eject itself, unplug the cable
+4. Repeat step one to go into boot select
+5. Upload micropython firmware (Latest: RPI_PICO-20231005-v1.21.0.uf2), and the controller will eject itself again
+6. Reconnect the controller, and the firmware has been flashed in.
+
+### Load Big Button code onto Raspberry Pi Pico
+1. 
 
 ## Manual:
 Inputs:
