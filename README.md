@@ -20,18 +20,20 @@ Issues:
 - Labels for knobs are too small
 - Track switch component is incorrect
 - Step length works strangely
-- Code issues have been fixed already.
-- Power does not power on Pico
+- Some code issues have been fixed already.
+- Power does not power on Pico (Fixed)
+- Uncomfortable button
 
 ## Ver 0.2 - Under Development
 
 New Features:
 - Added title of module
 - Placed mounting holes a bit closer together
-
-
+- Connect Eurorack power to Raspberry Pi Pico
+-
 
 New Issues:
+- None yet as build has not been built yet
 
 ## Programming Instructions:
 
@@ -50,8 +52,7 @@ New Issues:
 4. Unplug the controller, and the code should run automatically when powered on again
 
 ## Manual:
-Inputs:
-
+### Inputs:
 |Input name|Type|Function|
 |----------|----|--------|
 |Delete|Button|Delete current step|
@@ -61,15 +62,13 @@ Inputs:
 |Clock|Jack|Input a clock signal for sequencer|
 |Trigger|Big Button|trigger and record a pattern with the big button|
 
-Pots:
-
+### Pots:
 |Pot name|Function|
 |--------|--------|
 |Track|Select track 1-6|
 |Step Length|Gate length of outputs|
 
-Outputs:
-
+### Outputs:
 |Output name|Function|
 |-----------|--------|
 |1|First track output|
@@ -78,7 +77,6 @@ Outputs:
 |4|Fourth track output|
 |5|Fifth track output|
 |6|Sixth track output|
-
 
 ## FAQ
 None yet :)

@@ -1,6 +1,6 @@
-# Big Button PCB
+# Big-Button-PCB-v0.1
 
-**This is revision 0.1 of the PCB, so it is not free of potential errors. Please use at your own risk and give me feedback if you find errors. Gerber files are also available soon**
+**This is revision 0.1 of the PCB, so it is not free of potential errors. Please use at your own risk and give me feedback if you find errors.
 
 As I use EasyEDA for PCB Design, I do not have official project files for other EDA softwares.
 
