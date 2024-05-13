@@ -26,7 +26,7 @@ Issues:
 ## Ver 0.2 - Under Development
 
 New Features:
-- Added title of modules\
+- Added title of module
 - Placed mounting holes a bit closer together
 
 
@@ -36,18 +36,22 @@ New Issues:
 ## Programming Instructions:
 
 ### Flash latest micropython firmware into Raspberry Pi Pico
-1. Hold BootSel button while plugging in the Raspberry Pi Pico
-2. Upload flash_nuke.uf2 to remove any previous files in the controller if needed
+1. Hold BootSel button while plugging in the Raspberry Pi Pico, and a new drive should appear as 'RPI-RP2'
+2. Upload flash_nuke.uf2 to the drive to remove any previous files in the controller if needed
 3. The controller will automatically eject itself, unplug the cable
-4. Repeat step one to go into boot select
+4. Repeat step one to go into BootSel mode
 5. Upload micropython firmware (Latest: RPI_PICO-20231005-v1.21.0.uf2), and the controller will eject itself again
 6. Reconnect the controller, and the firmware has been flashed in.
 
 ### Load Big Button code onto Raspberry Pi Pico
-1. 
+1. With the controller connected
+2. Open the code with Thonny, and select device named 'MicroPython (Raspberry Pi Pico)'
+3. Save the code onto the controller with the name 'main.py'
+4. Unplug the controller, and the code should run automatically when powered on again
 
 ## Manual:
 Inputs:
+
 |Input name|Type|Function|
 |----------|----|--------|
 |Delete|Button|Delete current step|
@@ -58,12 +62,14 @@ Inputs:
 |Trigger|Big Button|trigger and record a pattern with the big button|
 
 Pots:
+
 |Pot name|Function|
 |--------|--------|
 |Track|Select track 1-6|
 |Step Length|Gate length of outputs|
 
 Outputs:
+
 |Output name|Function|
 |-----------|--------|
 |1|First track output|
@@ -72,3 +78,7 @@ Outputs:
 |4|Fourth track output|
 |5|Fifth track output|
 |6|Sixth track output|
+
+
+## FAQ
+None yet :)
