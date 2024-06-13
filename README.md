@@ -15,6 +15,13 @@ BOM has been uploaded, but the project is not tested yet so only use as referenc
 ## Ver 0.1 - Initial Commit
 **Note: this version is largely defected due to issues in code and hardware. Use as reference only.**
 
+|Process|Status|Time|
+|-------|------|----|
+|PCB|Drawn|-|
+|Fabrication|Done|-|
+|Build|Done|-|
+|
+
 Issues:
 - Hole for buttons are not big enough
 - Labels for knobs are too small
