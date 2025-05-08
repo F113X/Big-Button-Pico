@@ -1,6 +1,8 @@
 # Big-Button-Pico
 LMNC Big Button remade with the Raspberry Pi Pico for Eurorack, with changes in code and functionality, and reprogrammed with micropython
 
+[**New Documentation**](https://f113x.github.io/projects-documentation/archive/Big-Button-Pico/)
+
 Original build and documentation: https://www.lookmumnocomputer.com/big-button
 
 ![Big-Button-Pico](Images/big-button_orig_ref.jpeg)

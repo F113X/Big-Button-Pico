@@ -22,12 +22,12 @@ trk = ADC(26) #track Select
 stepLen = ADC(27) #step length
 
 #main sequence
-seq = [[1,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0],
-       [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0],
+seq = [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-       [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0]]
+       [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+       [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]
 
 #fill sequence
 fill = [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -111,19 +111,27 @@ def out(length, step):
     out5.value(0)
 
 #main code
-def main():
+def main(currentSeq):
     step = 0
     
     while True:
         length = stepLen.read_u16() / 65536
         reset()
         seqNum = fill()
+        if seqNum == 0:
+            currentSeq = seq
+            
+        elif seqNum == 1:
+            currentSeq = fill
+            
         
-        #track = trackSelect()
-        track = 0
+        
+        track = trackSelect()
+        #track = 0
         trigger(track, step, seqNum)
         delete(track,step)
         clear(track)
+        #print(trackSelect())
         
         if clk.value() == 1:
             out(length, step)
@@ -133,5 +141,5 @@ def main():
                 step = 0
         
 
-main()
+main(currentSeq)
 
